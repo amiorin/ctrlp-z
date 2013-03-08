@@ -20,14 +20,15 @@ else
 endif
 
 function! ctrlp#f#init()
-  let ans = input('f: ')
-  let cmd = 'fasd -f -l -e printf '. ans
-  let pathes = split(system(cmd),"\n")
+  let cmd = 'fasd -f -l'
+  let pathes = reverse(split(system(cmd),"\n"))
   return pathes
 endfunc
 
 function! ctrlp#f#accept(mode, str)
   call ctrlp#exit()
+  let cmd = 'fasd -A '.a:str
+  call system(cmd)
   if a:mode =~ 't'
       exec "tabedit ".a:str
   else

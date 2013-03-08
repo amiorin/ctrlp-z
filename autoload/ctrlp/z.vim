@@ -20,15 +20,17 @@ else
 endif
 
 function! ctrlp#z#init()
-  let ans = input('z: ')
-  let cmd = 'fasd -d -l -e printf '. ans
-  let pathes = split(system(cmd),"\n")
+  let cmd = 'fasd -d -l'
+  let pathes = reverse(split(system(cmd),"\n"))
   return pathes
 endfunc
 
 function! ctrlp#z#accept(mode, str)
   call ctrlp#exit()
-  exec "lcd ".a:str
+  let cmd = 'fasd -A '.a:str
+  call system(cmd)
+  exec "cd ".a:str
+  exec "NERDTree ."
   echo a:str
 endfunction
 
