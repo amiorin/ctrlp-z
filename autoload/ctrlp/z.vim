@@ -30,7 +30,9 @@ function! ctrlp#z#accept(mode, str)
   let cmd = 'fasd -A '.a:str
   call system(cmd)
   exec "cd ".a:str
-  exec "NERDTree ."
+  if exists('g:ctrlp_z_nerdtree') && !empty(g:ctrlp_z_nerdtree)
+    exec "NERDTree ."
+  endif
   echo a:str
 endfunction
 
