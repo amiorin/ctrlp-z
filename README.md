@@ -39,8 +39,8 @@ It might be useful like these mappings:
 Inside CtrlP use `<C-r>` to toggle between the string mode and full regexp mode.
 
 ## Link
-[kien/ctrlp.vim][4]
-[scrooloose/nerdtree][5]
+* [kien/ctrlp.vim][4]
+* [scrooloose/nerdtree][5]
 
 ## License
 Copyright (C) 2013 Alberto Miorin. Distributed under the MIT License.
