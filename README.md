@@ -1,5 +1,5 @@
 # ctrlp-z
-This [CtrlP][4] extension allows you to change the CWD and to open files using [fasd][3] and [NERDTree][5]
+This [CtrlP][4] extension allows you to change the **current working directory** and to open files using [fasd][3] and [NERDTree][5]
 
 ![img][6]
 
