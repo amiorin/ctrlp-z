@@ -33,8 +33,8 @@ Commands available:
 
 It might be useful like these mappings:
 
-    nnoremap <Space>pz :CtrlPZ<Cr>
-    nnoremap <Space>pf :CtrlPF<Cr>
+    nnoremap sz :CtrlPZ<Cr>
+    nnoremap sf :CtrlPF<Cr>
 
 Inside CtrlP use `<C-r>` to toggle between the string mode and full regexp mode.
 
