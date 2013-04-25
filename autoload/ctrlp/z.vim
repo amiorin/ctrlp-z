@@ -9,7 +9,7 @@ let s:z_var = {
 \  'accept': 'ctrlp#z#accept',
 \  'lname':  'z',
 \  'sname':  'z',
-\  'type':   'z',
+\  'type':   'path',
 \  'sort':   0,
 \}
 

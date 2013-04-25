@@ -9,7 +9,7 @@ let s:f_var = {
 \  'accept': 'ctrlp#f#accept',
 \  'lname':  'f',
 \  'sname':  'f',
-\  'type':   'f',
+\  'type':   'path',
 \  'sort':   0,
 \}
 
@@ -26,14 +26,9 @@ function! ctrlp#f#init()
 endfunc
 
 function! ctrlp#f#accept(mode, str)
-  call ctrlp#exit()
   let cmd = 'fasd -A '.a:str
   call system(cmd)
-  if a:mode =~ 't'
-      exec "tabedit ".a:str
-  else
-      exec "edit ".a:str
-  endif
+  call ctrlp#acceptfile(a:mode, a:str)
 endfunction
 
 function! ctrlp#f#exit()
