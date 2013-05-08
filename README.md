@@ -10,7 +10,7 @@ Don't forget put a line `Bundle 'amiorin/ctrlp-z'` in your `.vimrc`.
 If you use [Pathogen][2], you just execute following:
 
     cd ~/.vim/bundle
-    git https://github.com/amiorin/ctrlp-z.git
+    git clone https://github.com/amiorin/ctrlp-z.git
 
 If you don't use either plugin management system, copy `autoload` and `plugin` directory to your `.vim` directory.
 
