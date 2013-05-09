@@ -51,3 +51,7 @@ Copyright (C) 2013 Alberto Miorin. Distributed under the MIT License.
 [4]: https://github.com/kien/ctrlp.vim
 [5]: https://github.com/scrooloose/nerdtree
 [6]: https://pbs.twimg.com/media/BE1bIabCUAA3ItF.png:large
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/amiorin/ctrlp-z/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
