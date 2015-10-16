@@ -26,8 +26,6 @@ function! ctrlp#f#init()
 endfunc
 
 function! ctrlp#f#accept(mode, str)
-  let cmd = 'fasd -A '.a:str
-  call system(cmd)
   call ctrlp#acceptfile(a:mode, a:str)
 endfunction
 
